@@ -1,0 +1,1251 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat-Light;
+    font-size: 1.8rem;
+    .button_scrollTop {
+        position: fixed;
+        z-index: 1;
+        cursor: pointer;
+        font-size: 1.15rem;
+        bottom: 30px;
+        right: 20px;
+        color: rgb(143, 143, 143);
+        background: transparent;
+        border: none;
+        .button_scrollTop_title {
+            display: block;
+            width: 1ch;
+            line-height: 1.2ch;
+            word-wrap: break-word;
+            margin-bottom: 5px;
+        }
+    }
+    .header {
+        width: 100%;
+        background: white;
+        z-index: 1;
+        position: fixed;
+        top: 0px;
+        transition: 0.5s;
+        .header__top-box_container {
+            height: 40px;
+            color: rgb(238, 238, 238);
+            font-size: 0.9rem;
+            background: rgb(34, 34, 34);
+            .header__top-box_content {
+                display: flex;
+                justify-content: space-between;
+                .header_info, .header_address {
+                    display: flex;
+                    align-items: center;
+                }
+                .header_info {
+                    margin-left: -12px;
+                    .header_city {
+                        margin-left: 25px;
+                    }
+                    .header_phone-numbers {
+                        margin-left: 45px;
+                    }
+                    .header_lang, .header_city {
+                        .header_button-dropdown {
+                            background: rgb(34, 34, 34);
+                            border: 0px;
+                            font-size: inherit;
+                            font-family: Montserrat-Regular;
+                            padding: 10px;
+                            color: inherit;
+                            cursor: pointer;
+                            transition: 0.3s;
+                            display: flex;
+                            align-items: center;
+                            .header_button-svg {
+                                transition: 0.3s;
+                                width: 8px;
+                                margin-left: 5px;
+                                transform: rotate(0)
+                            }
+                        }
+                        .header_dropdown-menu {
+                            margin: 0;
+                            padding: 0;
+                            display: none;
+                            position: absolute;
+                            background: rgb(34, 34, 34);
+                            .header_item-dropdown {
+                                transition: 0.3s;
+                                .header_link-dropdown {
+                                    display: flex;
+                                    padding: 10px;
+                                    color: rgb(238, 238, 238);
+                                }
+                            }
+                        }
+                    }
+                    .header_phone-numbers {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        .header_phone-contact {
+                            color: rgb(238, 238, 238);
+                            margin-left: 15px;
+                            transition: 0.3s;
+                            font-family: Montserrat-Thin;
+                            font-weight: 600;
+                            &:last-child {
+                                margin-left: 40px;
+                            }
+                        }
+                    }
+                }
+                .header_address {
+                    .header_address-link {
+                        margin-left: 10px;
+                        color: rgb(238, 238, 238);
+                        font-weight: 600;
+                        font-family: Montserrat-ExtraLightItalic;
+                    }
+                }
+            }
+        }
+        .header__middle-box_container {
+            border-bottom: 1px solid rgb(136, 136, 136);
+            .header__middle-box_content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: rgb(34, 34, 34);
+                height: 100px;
+                font-size: 1.15rem;
+                .header_getting {
+                    .header_getting-list {
+                        display: flex;
+                        .header_list-item {
+                            &:first-child, &:nth-child(2) {
+                                margin-right: 45px;
+                            }
+                            .header_item-link {
+                                color: inherit;
+                            }
+                            .header_link-active {
+                                font-family: Montserrat-SemiBold;
+                            }
+                        }
+                    }
+                }
+                .header_logo {
+                    font-family: Gotham-Black;
+                    margin-left: 16.5%;
+                    .header_logo-title {
+                        color: black;
+                        transition: 0.3s;
+                        font-size: 1.5rem;
+                        letter-spacing: 2px;
+                    }
+                }
+                .header_search {
+                    margin-left: 9.5%;
+                    .header_burger-menu {
+                        display: none;
+                    }
+                    .header_form-search {
+                        display: flex;
+                        border-bottom: 1px solid black;
+                        margin-right: 15px;
+                        .header_search-input {
+                            border: none;
+                            outline: none;
+                            margin-left: 10px;
+                            height: 30px;
+                            width: 215px;
+                            font-size: 1.1rem;
+                            font-family: Montserrat-Medium;
+                            &::-webkit-input-placeholder {
+                                font-family: Montserrat-ExtraLightItalic;
+                                font-weight: 600;
+                            }
+                            &:-moz-placeholder {
+                                font-family: Montserrat-ExtraLightItalic;
+                                font-weight: 600;
+                            }
+                            &::-moz-placeholder {
+                                font-family: Montserrat-ExtraLightItalic;
+                                font-weight: 600;
+                            }
+                            &:-ms-input-placeholder {
+                                font-family: Montserrat-ExtraLightItalic;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                .header_user-tools {
+                    display: flex;
+                    .header_favorite, .header_shopping {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .header_favorite-image-box, .header_shopping-svg-box {
+                            background: rgb(254, 254, 7);
+                            padding: 6px;
+                            margin-right: 10px;
+                            transition: 0.3s;
+                        }
+                        .header_favorite-count, .header_shopping-count {
+                            background: white;
+                            font-family: Montserrat-SemiBold;
+                            font-size: 1.05rem;
+                        }
+                    }
+                    .header_favorite {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .header__bottom-box-container {
+            height: 70px;
+            .header_nav-category {
+                height: inherit;
+                .header_category-list {
+                    display: flex;
+                    justify-content: space-between;
+                    height: inherit;
+                    align-items: center;
+                    .header_list-item {
+                        flex-grow: 1;
+                        border-top: 3px solid white;
+                        height: calc(100% - 3px);
+                        transition: 0.3s;
+                        .header_item-link {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-family: Montserrat-SemiBold;
+                            font-size: 1.15rem;
+                            color: black;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .header_dropdown-container {
+                            display: flex;
+                            visibility: hidden;
+                            padding: 20px 0 45px 0;
+                            opacity: 0;
+                            transition: 0.3s;
+                            justify-content: center;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            right: 0;
+                            max-height: calc(100vh - 300px);
+                            height: 465px;
+                            width: 100vw;
+                            background: white;
+                            border-top: 1px solid #eeeeee;
+                            border-bottom: 1px solid #eeeeee;
+                            overflow: hidden;
+                            overflow-y: scroll;
+                            -ms-overflow-style: none;
+                            scrollbar-width: none;
+                            &::-webkit-scrollbar {
+                                width: 0px;
+                                background: transparent;
+                            }
+                            .header_dropdown-menu {
+                                min-height: 465px;
+                                height: 465px;
+                                display: flex;
+                                flex-direction: column;
+                                flex-wrap: wrap;
+                                background: white;
+                                max-width: 1250px;
+                                width: 100%;
+                                .header_dropdown-item {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 15px;
+                                    .header_item-link {
+                                        display: block;
+                                        width: max-content;
+                                        font-size: 1rem;
+                                        font-family: Montserrat-Light;
+                                        color: #888888;
+                                    }
+                                }
+                                .header_dropdown-item-last {
+                                    margin-bottom: 50px;
+                                }
+                                .header_dropdown-main {
+                                    margin-top: 0px;
+                                    .header_item-link {
+                                        font-size: 1rem;
+                                        font-family: Montserrat-SemiBold !important;
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .header_info-list {
+                    display: none;
+                }
+            }
+        }
+    }
+    .main {
+        position: relative;
+        z-index: 0;
+        padding-top: 211px;
+        .gender-banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 55px;
+            overflow: hidden;
+            .gender-banner__box-container {
+                background: rgb(218, 218, 218);
+                .gender-banner__box-content {
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    max-width: 1600px;
+                    .gender-banner_button {
+                        display: flex;
+                        align-self: center;
+                        padding: 11px 35px;
+                        height: max-content;
+                        margin: 180px 15px 0 15px;
+                        transition: 0.3s;
+                        font-family: Montserrat-SemiBold;
+                        font-size: 0.95rem;
+                    }
+                    .gender-banner_left {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 50%;
+                        .gender-banner_left_image-container {
+                            display: flex;
+                            .gender-banner_left-image {
+                                max-width: 100%;
+                                height: auto;
+                            }
+                        }
+                        .gender-banner_male-info {
+                            display: flex;
+                            .gender-banner_info {
+                                display: none;
+                            }
+                            .gender-banner_title {
+                                display: none;
+                            }
+                            .gender-banner_male-button {
+                                color: white;
+                                background: black;
+                                width: max-content;
+                            }
+                        }
+                    }
+                    .gender-banner_center-brand {
+                        position: absolute;
+                        top: calc(50% - 164px);
+                        left: calc(50% - (500px / 2));
+                        z-index: 1;
+                    }
+                    .gender-banner_right {
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 50%;
+                        .gender-banner_right_image-container {
+                            display: flex;
+                            .gender-banner_right-image {
+                                max-width: 100%;
+                                height: auto;
+                                position: relative;
+                                left: 9%;
+                                z-index: 0;
+                            }
+                        }
+                        .gender-banner_female-info {
+                            display: flex;
+                            .gender-banner_info {
+                                display: none;
+                            }
+                            .gender-banner_title {
+                                display: none;
+                            }
+                            .gender-banner_female-button {
+                                color: black;
+                                background: rgb(254, 250, 7);
+                                width: max-content;
+                                display: flex;
+                                justify-self: center;
+                            }
+                        }
+                    }
+                }
+            }
+            .gender-banner_info-discount {
+                display: flex;
+                font-family: Montserrat-Regular;
+                font-size: 1.125rem;
+                color: rgb(85, 85, 85);
+                .gender-banner_discount-link {
+                    text-decoration: underline;
+                    color: black;
+                }
+            }
+        }
+        .catalog-banner__box-container{
+            margin-bottom: 135px;
+            .catalog-banner__box-content {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 50px;
+                justify-content: space-between;
+                .catalog-banner_info-container {
+                    position: relative;
+                    .catalog-banner_image {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    .catalog-banner-content {
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        color: white;
+                        font-family: Montserrat-ExtraBold;
+                        top: 310px;
+                        left: 40px;
+                        right: 40px;
+                        .catalog-banner_info {
+                            font-size: 0.95rem;
+                            letter-spacing: 2px;
+                            line-height: 23px;
+                            text-align: center;
+                        }
+                        .catalog-banner_title {
+                            margin: 0 0 25px 0;
+                            font-size: 3.7rem;
+                            letter-spacing: 4px;
+                            text-align: center;
+                            line-height: 90px;
+                        }
+                        .catalog-banner_button {
+                            display: flex;
+                            align-items: center;
+                            width: max-content;
+                            font-size: 1rem;
+                            font-family: Montserrat-SemiBold;
+                            font-weight: 600;
+                            letter-spacing: 1px;
+                            padding: 12px 25px;
+                            height: 24px;
+                            color: black;
+                            background: white;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+        .product__box-container {
+            margin-bottom: 23px;
+            .product__box-content {
+                .product_list {
+                    margin-bottom: 25px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: -15px !important;
+                    margin-right: -15px !important;
+                    .product_list-item {
+                        width: calc(25% - 30px);
+                        margin-bottom: 30px;
+                        padding: 0 15px;
+                        .product_list-item_content {
+                            .product_image-container {
+                                border: 1px solid white;
+                                width: inherit;
+                                height: 400px;
+                                transition: 0.3s;
+                                margin-bottom: 10px;
+                                .product_image_link {
+                                    position: relative;
+                                    display: flex;
+                                    .product_image {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                    .product_preview-button {
+                                        position: absolute;
+                                        cursor: pointer;
+                                        overflow: hidden;
+                                        width: max-content;
+                                        height: 0px;
+                                        left: 0;
+                                        right: 0;
+                                        top: 0;
+                                        bottom: 0;
+                                        margin: auto;
+                                        background: white;
+                                        color: black;
+                                        outline: none;
+                                        border: none;
+                                        padding: 0px 25px;
+                                        font-family: Montserrat-SemiBold;
+                                        transition: 0.3s;
+                                    }
+                                    .product_item-new {
+                                        position: absolute;
+                                        font-family: Montserrat-Medium;
+                                        font-weight: 600;
+                                        font-style: italic;
+                                        font-size: 0.85rem;
+                                        top: 15px;
+                                        left: 15px;
+                                        padding: 4px 7px;
+                                        background: rgb(254, 250, 7);
+                                        color: black;
+                                    }
+                                }
+                            }
+                            .product_info-container {
+                                margin-bottom: 12px;
+                                .product_info-title {
+                                    display: block;
+                                    font-family: Raleway;
+                                    font-weight: 900;
+                                    font-size: 1rem;
+                                    color: rgb(102, 102, 102);
+                                    margin-bottom: 18px;
+                                    line-height: 20px;
+                                }
+                                .product_favorite-container {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    .product_info-price {
+                                        font-family: Roboto-Bold;
+                                        font-size: 1.1rem;
+                                    }
+                                    .product_favorite-button {
+                                        outline: none;
+                                        border: 0;
+                                        padding: 0;
+                                        cursor: pointer;
+                                        background: transparent;
+                                    }
+                                }
+                            }
+                            .product_color-container {
+                                display: flex;
+                                .product_color {
+                                    width: 15px;
+                                    height: 15px;
+                                    margin-right: 8px;
+                                    border-radius: 50%;
+                                }
+                                .product_color-black {
+                                    background: rgb(0, 0, 0);
+                                }
+                                .product_color-gray {
+                                    background: rgb(215, 215, 215);
+                                }
+                                .product_color-red {
+                                    background: rgb(255, 0, 0);
+                                }
+                            }
+                        }
+                    }
+                }
+                .product_more-link {
+                    display: inline-flex;
+                    align-items: center;
+                    border: 1px solid black;
+                    padding: 5px 35px;
+                    color: black;
+                    font-family: Montserrat-SemiBold;
+                    font-size: 0.75rem;
+                    &::after {
+                        position: relative;
+                        margin-left: 10px;
+                        content: "";
+                        width: 35px;
+                        height: 7px;
+                        display: flex;
+                        background: url("data:image/svg+xml,%3Csvg id='Layer_1' style='enable-background:new 0 0 50 50;' version='1.1' viewBox='0 0 50 50' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Layer_1_1_'%3E%3Cpolygon points='1,26 44.586,26 38.293,32.293 39.707,33.707 48.414,25 39.707,16.293 38.293,17.707 44.586,24 1,24 '/%3E%3C/g%3E%3C/svg%3E") no-repeat center;
+                        background-size: 100%;
+                        left: 0px;
+                        transition: 0.3s;
+                    }    
+                }
+            }   
+        }
+        .news_box-container {
+            margin-bottom: 90px;
+            .news_box-content {
+                .news_title {
+                    font-family: Montserrat-ExtraBold;
+                    font-size: 2.3rem;
+                    letter-spacing: 1px;
+                    margin-bottom: 25px;
+                }
+                .news_list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-left: -15px;
+                    margin-right: -15px;
+                    .news_list-item {
+                        padding: 15px;
+                        width: calc(33.33% - 30px);
+                        .news_item {
+                            border: 1px solid rgb(223, 223, 223);
+                            padding: 25px;
+                            box-shadow: 0 1rem 15px rgb(0 0 0 / 3%);
+                            .news_item-header {
+                                display: flex;
+                                justify-content: space-between;
+                                font-size: 0.88rem;
+                                margin-bottom: 32px;
+                                .news_header-left {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    .news_header-image {
+                                        border-radius: 50%;
+                                        width: 40px;
+                                        height: 40px;
+                                        margin-right: 10px;
+                                    }
+                                    .news_header-publish {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        flex-direction: column;
+                                        .news_header-author {
+                                            font-family: Raleway;
+                                            font-weight: 900;
+                                        }
+                                        .news_header-date {
+                                            font-family: Montserrat-Regular;
+                                            color: rgb(136, 136, 136);
+                                        }
+                                    }
+                                }
+                                .news_header-right {
+                                    display: flex;
+                                    .news_header-response {
+                                        min-width: max-content;
+                                        font-family: Montserrat-Regular;
+                                        color: rgb(136, 136, 136);
+                                    }
+                                }
+                            }
+                            .news_item-content {
+                                display: block;
+                                .news_content-image {
+                                    width: 100%;
+                                }
+                                .news_content-title {
+                                    font-family: Montserrat-SemiBold;
+                                    font-size: 1.37rem;
+                                    margin-top: 20px;
+                                    margin-bottom: 18px;
+                                    line-height: 34px;
+                                    color: black;
+                                    transition: 0.3s;
+                                }
+                                .news_content-info {
+                                    font-family: Montserrat-Regular;
+                                    font-size: 1rem;
+                                    line-height: 24px;
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 6;
+                                    overflow: hidden;
+                                    margin-bottom: 10px;
+                                    color: rgb(136, 136, 136);
+                                }
+                                .news_content-more {
+                                    font-family: Montserrat-SemiBold;
+                                    font-size: 0.87rem;
+                                    letter-spacing: 1px;
+                                    color: black;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    &::after {
+                                        position: relative;
+                                        margin-left: 10px;
+                                        content: "";
+                                        width: 35px;
+                                        height: 7px;
+                                        background: url("data:image/svg+xml,%3Csvg id='Layer_1' style='enable-background:new 0 0 50 50;' version='1.1' viewBox='0 0 50 50' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Layer_1_1_'%3E%3Cpolygon points='1,26 44.586,26 38.293,32.293 39.707,33.707 48.414,25 39.707,16.293 38.293,17.707 44.586,24 1,24 '/%3E%3C/g%3E%3C/svg%3E") no-repeat center;
+                                        background-size: 100%;
+                                        left: 0px;
+                                        transition: 0.3s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .subscribe_box-container {
+            border-top: 1px solid rgb(204, 204, 204);
+            border-bottom: 1px solid rgb(204, 204, 204);
+            background: rgb(248, 248, 248);
+            margin-bottom: 100px;
+            .subscribe_box-content {
+                padding: 35px 15px;
+                display: flex;
+                justify-content: space-between;
+                .subscribe_info {
+                    font-family: Montserrat-SemiBold;
+                    font-size: 1.5rem;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                }
+                .subscribe_form {
+                    .subscribe_form-input {
+                        padding: 14px 30px 14px 25px;
+                        margin-right: 2.6vw;
+                        border: 1px solid rgb(118, 118, 118);
+                        outline: none;
+                        font-size: 1.1rem;
+                        font-family: Montserrat-Medium;
+                        &::-webkit-input-placeholder {
+                            font-family: Montserrat-ExtraLightItalic;
+                            font-weight: 600;
+                        }
+                        &:-moz-placeholder {
+                            font-family: Montserrat-ExtraLightItalic;
+                            font-weight: 600;
+                        }
+                        &::-moz-placeholder {
+                            font-family: Montserrat-ExtraLightItalic;
+                            font-weight: 600;
+                        }
+                        &:-ms-input-placeholder {
+                            font-family: Montserrat-ExtraLightItalic;
+                            font-weight: 600;
+                        }
+                    }
+                    .subscribe_form-button {
+                        cursor: pointer;
+                        border: 0;
+                        background: rgb(254, 250, 7);
+                        color: black;
+                        padding: 16px 30px;
+                        font-family: Montserrat-SemiBold;
+                        font-size: 1rem;
+                        letter-spacing: 1px;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        .brand_box-container {
+            margin-bottom: 60px;
+           .brand_box-content {
+                position: relative;
+               .brand_image-container {
+                   max-width: 100%;
+                   height: auto;
+               }
+               .brand_info-container {
+                position: absolute;
+                top: 27.5%;
+                right: 0;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                   .brand_title {
+                        color: rgb(254, 250, 7);
+                        font-family: Montserrat-ExtraBold;
+                        font-size: 3.2rem;
+                        letter-spacing: 30px;
+                        line-height: 85px;
+                        margin: 0 0 5.5% 0;
+                   }
+                   .brand_link {
+                        width: max-content;
+                        font-family: Montserrat-SemiBold;
+                        font-size: 1.05rem;
+                        border: 1px solid white;
+                        color: white;
+                        padding: 14px 60px;
+                        transition: 0.3s;
+                   }
+               }
+           } 
+        }
+    }
+    .footer {
+        .footer__logo_container {
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgb(136, 136, 136);
+            margin-bottom: 25px;
+            .footer__logo_content {
+                .footer_logo-link {
+                    font-family: Gotham-Black;
+                    margin-left: 16.5%;
+                    text-align: center;
+                    .footer_logo-title {
+                        color: black;
+                        transition: 0.3s;
+                        font-size: 1.5rem;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+        .footer__nav-container {
+            margin-bottom: 75px;
+            .footer__nav-content {
+                display: flex;
+                justify-content: space-between;
+                .footer_nav-list {
+                    font-size: 1rem;
+                    width: 100%;
+                    .footer_list_item {
+                        color: rgb(136, 136, 136);
+                        line-height: 39px;
+                        &:first-child {
+                            font-family: Montserrat-SemiBold;
+                            color: black;
+                        }
+                        .footer_item_link {
+                            color: inherit;
+                        }
+                    }
+                }
+                .footer_subscribe {
+                    width: 100%;
+                    .footer_subscribe-title {
+                        font-family: Montserrat-SemiBold;
+                        font-size: 1rem;
+                        margin: 10px 0 0 0;
+                    }
+                    .footer_subscribe-info {
+                        font-size: 1rem;
+                        margin-bottom: 17px;
+                        line-height: 25px;
+                    }
+                    .footer_subscribe-form {
+                        display: flex;
+                        justify-content: space-between;
+                        border: 1px solid black;
+                        .footer_form-input {
+                            outline: none;
+                            border: none;
+                            color: rgb(85, 85, 85);
+                            padding: 3px 0 3px 10px;
+                            font-size: 1.13rem;
+                            font-family: Montserrat-Regular;
+                            &::-webkit-input-placeholder {
+                                font-family: Montserrat-ExtraLightItalic;
+                                font-weight: 600;
+                            }
+                            &:-moz-placeholder {
+                                font-family: Montserrat-ExtraLightItalic;
+                                font-weight: 600;
+                            }
+                            &::-moz-placeholder {
+                                font-family: Montserrat-ExtraLightItalic;
+                                font-weight: 600;
+                            }
+                            &:-ms-input-placeholder {
+                                font-family: Montserrat-ExtraLightItalic;
+                                font-weight: 600;
+                            }
+                        }
+                        .footer_form-button {
+                            border: 0;
+                            cursor: pointer;
+                            padding: 8px 10px;
+                            background: white;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+        .footer__bottom-container {
+            color: white;
+            background: black;
+            font-family: Montserrat-Regular;
+            .footer__bottom-content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 14px 15px;
+                .footer_bottom-copyright {
+                    font-size: 0.89rem;
+                }
+                .footer_botoom-social {
+                    display: flex;
+                    .footer_social-link {
+                        display: flex;
+                        opacity: 1;
+                        &:not(:last-child) {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+                .footer_bottom-contacts {
+                    display: flex;
+                    .footer_contacts_number {
+                        color: inherit;
+                        font-size: 0.89rem;
+                        opacity: 1;
+                        transition: 0.3s;
+                        &:nth-child(2) {
+                            margin-right: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// Hover animation
+@media (min-width: 1201px) {
+    body {
+        .button_scrollTop {
+            &:hover {
+                color: rgb(0, 0, 0);
+                .button_scrollTop_svg {
+                    fill: rgb(0, 0, 0);
+                }
+            }
+        }
+        .header {
+            .header__top-box_container {
+                .header__top-box_content {
+                    .header_info {
+                        .header_lang, .header_city {
+                            .header_button-dropdown {
+                                &:hover {
+                                    transition: 0.3s;
+                                    color: rgb(176, 176, 176);
+                                    .header_button-svg {
+                                        transition: 0.3s;
+                                        transform: rotate(180deg) !important;
+                                    }
+                                    +.header_dropdown-menu {
+                                        display: block !important;
+                                    }
+                                }
+                            }
+                            .header_dropdown-menu {
+                                &:hover {
+                                    display: block !important;
+                                }
+                                .header_item-dropdown {
+                                    &:hover {
+                                        transition: 0.3s;
+                                        background: rgb(77, 77, 77);
+                                    }
+                                }
+                            }
+                        }
+                        .header_phone-numbers {
+                            .header_phone-contact {
+                                &:hover {
+                                    transition: 0.3s;
+                                    color: rgb(176, 176, 176);
+                                }
+                            }
+                        }
+                    }
+                    .header_address {
+                        .header_address-link {
+                            &:hover {
+                                transition: 0.3s;
+                                color: rgb(176, 176, 176);
+                            }
+                        }
+                    }
+                }
+            }
+            .header__middle-box_container {
+                .header__middle-box_content {
+                    .header_getting {
+                        .header_getting-list {
+                            .header_list-item {
+                                .header_item-link {
+                                    &:hover {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .header_logo {
+                        .header_logo-title {
+                            &:hover {
+                                color: rgb(77, 77, 77);
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                    .header_user-tools {
+                        .header_favorite, .header_shopping {
+                            .header_favorite-image-box, .header_shopping-svg-box {
+                                &:hover {
+                                    transition: 0.3s;
+                                    background: black;
+                                    .header_favorite-svg, .header_shopping-svg {
+                                        fill: white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .header__bottom-box-container {
+                .header_nav-category {
+                    .header_category-list {
+                        .header_list-item {
+                            &:hover {
+                                transition: 0.3s;
+                                border-top: 3px solid black;
+                                .header_dropdown-container {
+                                    opacity: 1;
+                                    transition: 0.3s;
+                                    visibility: visible;
+                                }
+                            }
+                            .header_dropdown-container {
+                                .header_dropdown-menu {
+                                    .header_dropdown-item {
+                                        .header_item-link {
+                                            &:hover {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main {
+            .gender-banner {
+                .gender-banner__box-container {
+                    .gender-banner__box-content {
+                        .gender-banner_left {
+                            .gender-banner_male-button {
+                                &:hover {
+                                    background: white;
+                                    color: black;
+                                    transition: 0.3s;
+                                }
+                            }
+                        }
+                        .gender-banner_right {
+                            .gender-banner_female-button {
+                                &:hover {
+                                    background: white;
+                                    color: black;
+                                    transition: 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+                .gender-banner_info {
+                    .gender-banner_info-link {
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .catalog-banner__box-container{
+                .catalog-banner__box-content {
+                    .catalog-banner_info-container {
+                        .catalog-banner-content {
+                            .catalog-banner_button {
+                                &:hover {
+                                    color: white;
+                                    background: black;
+                                    transition: 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .product__box-container {
+                .product__box-content {
+                    .product_list {
+                        .product_list-item {
+                            .product_list-item_content {
+                                .product_image-container {
+                                    &:hover {
+                                        border: 1px solid rgb(223, 223, 223);
+                                        transition: 0.3s;
+                                        .product_image_link {
+                                            transition: 0.3s;
+                                            .product_preview-button {
+                                                height: 32px;
+                                                transition: 0.3s;
+                                            }
+                                        }
+                                    }
+                                    .product_image_link {
+                                        .product_preview-button {
+                                            &:hover {
+                                                background: black;
+                                                color: white;
+                                                transition: 0.3s;
+                                            }
+                                        }
+                                    }
+                                }
+                                .product_info-container {
+                                    .product_info-title {
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                    .product_favorite-container {
+                                        .product_favorite-button {
+                                            transition: 0.3s;
+                                            &:hover {
+                                                .product__favorite-svg {
+                                                    path {
+                                                        transition: 0.3s;
+                                                        fill: rgb(254, 250, 7);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .product_more-link {
+                        &:hover {
+                            &::after {
+                                left: 10px;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                }   
+            }
+            .news_box-container {
+                .news_box-content {
+                    .news_list {
+                        .news_list-item {
+                            .news_item {
+                                .news_item-content {
+                                    &:hover {
+                                        .news_content-title {
+                                            color: rgb(204, 51, 51);
+                                            transition: 0.3s;
+                                        }
+                                        .news_content-more::after {
+                                            left: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .subscribe_box-container {
+                .subscribe_box-content {
+                    .subscribe_form {
+                        .subscribe_form-button {
+                            &:hover {
+                                background: black;
+                                color: white;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                }
+            }
+            .brand_box-container {
+               .brand_box-content {
+                   .brand_info-container {
+                       .brand_link {
+                            &:hover {
+                                background: white;
+                                color: black;
+                                transition: 0.3s;
+                            }
+                       }
+                   }
+               } 
+            }
+        }
+        .footer {
+            .footer__logo_container {
+                .footer__logo_content {
+                    .footer_logo-link {
+                        .footer_logo-title {
+                            &:hover {
+                                color: rgb(77, 77, 77);
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer__nav-container {
+                .footer__nav-content {
+                    .footer_nav-list {
+                        .footer_list_item {
+                            .footer_item_link {
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    .footer_subscribe {
+                        .footer_subscribe-form {
+                            .footer_form-button {
+                                &:hover {
+                                    background: rgb(238, 238, 238);
+                                    transition: 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer__bottom-container {
+                .footer__bottom-content {
+                    .footer_botoom-social {
+                        .footer_social-link {
+                            &:hover {
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                    .footer_bottom-contacts {
+                        .footer_contacts_number {
+                            &:hover {
+                                opacity: 0.7;
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/glodal.css">
+    <link rel="stylesheet" href="style/svg.css">
+    <link rel="stylesheet" href="style/adaptive.css">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="button_scrollTop" class="button_scrollTop">
+        <span class="button_scrollTop_title">Вверх</span>
+        <svg class="button_scrollTop_svg" fill="#888888" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <title></title>
+            <g data-name="1" id="_1">
+                <path d="M16,1A11,11,0,0,0,5,12V22.59l-3.29-3.3L.29,20.71l5,5a1,1,0,0,0,1.42,0l5-5-1.42-1.42L7,22.59V12a9,9,0,0,1,18,0V30h2V12A11,11,0,0,0,16,1Z" id="action_undo_arrow_back"></path>
+            </g>
+        </svg>
+    </button>
+    <header id="header" class="header">
+        <div class="header__top-box_container fullSizeContainer">
+            <div class="header__top-box_content centerContainer">
+                <div class="header_info">
+                    <div class="header_lang">
+                        <button id="buttonLang" class="header_button-dropdown" type="button">
+                            Ru
+                            <svg id="svg-lang" class="header_button-svg" height="7px" version="1.1" viewBox="0 0 10 7" width="10px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#EEEEEE" id="Core" transform="translate(-469.000000, -9.000000)"><g id="arrow-drop-down" transform="translate(469.000000, 9.500000)"><path d="M0,0 L5,5 L10,0 L0,0 Z" id="Shape"/></g></g></g></svg>
+                        </button>
+                        <ul id="dropdownLang" class="header_dropdown-menu">
+                            <li class="header_item-dropdown"><a href="#" class="header_link-dropdown">Ua</a></li>
+                            <li class="header_item-dropdown"><a href="#" class="header_link-dropdown">En</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_city">
+                        <button id="buttonCity" class="header_button-dropdown" type="button">
+                            Киев
+                            <svg id="svg-city" class="header_button-svg" height="7px" version="1.1" viewBox="0 0 10 7" width="10px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="#EEEEEE" id="Core" transform="translate(-469.000000, -9.000000)"><g id="arrow-drop-down" transform="translate(469.000000, 9.500000)"><path d="M0,0 L5,5 L10,0 L0,0 Z" id="Shape"/></g></g></g></svg>
+                        </button>
+                        <ul id="dropdownCity" class="header_dropdown-menu">
+                            <li class="header_item-dropdown"><a href="#" class="header_link-dropdown">Львов</a></li>
+                            <li class="header_item-dropdown"><a href="#" class="header_link-dropdown">Луцк</a></li>
+                            <li class="header_item-dropdown"><a href="#" class="header_link-dropdown">Днепр</a></li>
+                            <li class="header_item-dropdown"><a href="#" class="header_link-dropdown">Винница</a></li>
+                            <li class="header_item-dropdown"><a href="#" class="header_link-dropdown">Одесса</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_phone-numbers">
+                        <svg class="header_phone-svg" fill="#EEEEEE" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M415.9,335.5c-14.6-15-56.1-43.1-83.3-43.1c-6.3,0-11.8,1.4-16.3,4.3c-13.3,8.5-23.9,15.1-29,15.1c-2.8,0-5.8-2.5-12.4-8.2  l-1.1-1c-18.3-15.9-22.2-20-29.3-27.4l-1.8-1.9c-1.3-1.3-2.4-2.5-3.5-3.6c-6.2-6.4-10.7-11-26.6-29l-0.7-0.8  c-7.6-8.6-12.6-14.2-12.9-18.3c-0.3-4,3.2-10.5,12.1-22.6c10.8-14.6,11.2-32.6,1.3-53.5c-7.9-16.5-20.8-32.3-32.2-46.2l-1-1.2  c-9.8-12-21.2-18-33.9-18c-14.1,0-25.8,7.6-32,11.6c-0.5,0.3-1,0.7-1.5,1c-13.9,8.8-24,20.9-27.8,33.2c-5.7,18.5-9.5,42.5,17.8,92.4  c23.6,43.2,45,72.2,79,107.1c32,32.8,46.2,43.4,78,66.4c35.4,25.6,69.4,40.3,93.2,40.3c22.1,0,39.5,0,64.3-29.9  C442.3,370.8,431.5,351.6,415.9,335.5z"></path>
+                        </svg>
+                        <a href="tel:0800211611" class="header_phone-contact">0 (800) 211-611</a>
+                        <a href="tel:0676533024" class="header_phone-contact">(067) 653-30-24</a>
+                    </div>
+                </div>
+                <div class="header_address">
+                    <svg class="header_address-svg" fill="#EEEEEE" id="Layer_1" style="enable-background:new 0 0 91 91;" version="1.1" viewBox="0 0 91 91" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g>
+                            <path d="M67.3,41.3c0-11.7-9.5-21.2-21.2-21.2c-11.7,0-21.2,9.5-21.2,21.2c0,9.6,6.7,18.2,15.9,20.6l1.8,4.8   c-5,0.3-13.4,1.5-13.4,5.7c0,5.7,15.2,5.9,17,5.9s17-0.2,17-5.9c0-4.3-8.5-5.4-13.5-5.7l1.7-4.7C60.6,59.6,67.3,51,67.3,41.3z    M53,41.3c0,3.8-3.1,6.9-6.9,6.9c-3.8,0-6.9-3.1-6.9-6.9c0-3.8,3.1-6.9,6.9-6.9C49.9,34.4,53,37.5,53,41.3z M59.6,72.4   c-1,1-5.9,2.5-13.5,2.5c-7.5,0-12.4-1.5-13.5-2.5c0.9-0.9,5-2.2,11.2-2.4l1.1,2.9c0.2,0.5,0.6,0.8,1.2,0.8c0,0,0,0,0,0   c0.5,0,1-0.3,1.2-0.8l1-2.9C54.6,70.2,58.6,71.5,59.6,72.4z"></path>
+                        </g>
+                    </svg>
+                    <a href="#" class="header_address-link">г. Луцк, ул. Яровиця, 15 24 / 7</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle-box_container fullSizeContainer">
+            <div class="header__middle-box_content centerContainer">
+                <nav class="header_getting">
+                    <ul class="header_getting-list">
+                        <li class="header_list-item">
+                            <a href="#" class="header_item-link header_link-active">Оплата</a>
+                        </li>
+                        <li class="header_list-item">
+                            <a href="#" class="header_item-link">Доставка</a>
+                        </li>
+                        <li class="header_list-item">
+                            <a href="#" class="header_item-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="logotypeTopBlock" class="header_logo">
+                    <a class="header_logo-link" href="/pages/index.html">
+                        <h1 class="header_logo-title">PARKAS</h1>
+                    </a>
+                </div>
+                <div id="searchBlock" class="header_search">
+                    <button class="header_burger-menu" id="burgerButtonMenu">
+                        <span id="burgerTopLine" class="burger_top-line burger_item-line"></span>
+                        <span id="burgerMiddleLine" class="burger_middle-line burger_item-line"></span>
+                        <span id="burgerBottomLine" class="burger_bottom-line burger_item-line"></span>
+                    </button>
+                    <form class="header_form-search" action="#" method="post">
+                        <svg class="header_search-svg" height="16px" id="Layer_1" style="enable-background:new 0 0 16 16;" version="1.1" viewBox="0 0 16 16" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M15.7,14.3l-3.105-3.105C13.473,10.024,14,8.576,14,7c0-3.866-3.134-7-7-7S0,3.134,0,7s3.134,7,7,7  c1.576,0,3.024-0.527,4.194-1.405L14.3,15.7c0.184,0.184,0.38,0.3,0.7,0.3c0.553,0,1-0.447,1-1C16,14.781,15.946,14.546,15.7,14.3z   M2,7c0-2.762,2.238-5,5-5s5,2.238,5,5s-2.238,5-5,5S2,9.762,2,7z"></path>
+                        </svg>
+                        <input id="inputSearch" class="header_search-input" type="text" placeholder="Поиск">
+                    </form>
+                </div>
+                <div id="userToolsTopBlock" class="header_user-tools">
+                    <div class="header_favorite">
+                        <a href="#" class="header_favorite-image-box">
+                            <svg class="header_favorite-svg" enable-background="new 0 0 96 96" id="heart" version="1.1" viewBox="0 0 96 96" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M87.598,15.029c-9.373-9.373-24.568-9.373-33.94,0L48,20.686l-5.657-5.656c-9.373-9.373-24.569-9.373-33.941,0  c-9.373,9.373-9.373,24.568,0,33.941l5.657,5.654L48,88.566l33.941-33.941l5.656-5.654C96.971,39.598,96.971,24.402,87.598,15.029z   M70.627,54.627L48,77.254L25.374,54.627L14.061,43.314c-6.249-6.248-6.249-16.379,0-22.629c6.249-6.248,16.379-6.248,22.627,0  L48,32l11.314-11.314c6.248-6.248,16.379-6.248,22.627,0c6.248,6.25,6.248,16.379,0,22.629L70.627,54.627z"></path>
+                            </svg>
+                        </a>
+                        <span class="header_favorite-count">(1)</span>
+                    </div>
+                    <div class="header_shopping">
+                        <a href="#" class="header_shopping-svg-box">
+                            <svg class="header_shopping-svg" style="enable-background:new 0 0 1489.733 1698.268;" version="1.1" viewBox="0 0 1489.733 1698.268" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="shopping_bag_2">
+                                    <path d="M1489.668,1540.226l-50.734-1145.759c-0.896-84.585-70.35-153.199-155.591-153.199h-257.892   C1004.523,106.268,886.593,0,744.689,0C602.747,0,484.784,106.268,463.85,241.268H206.313   c-85.217,0-154.649,68.616-155.543,153.202L0.064,1540.188C0.022,1541.16,0,1542.146,0,1543.121   c0,85.543,69.797,155.146,155.592,155.146h1178.556c85.79,0,155.586-69.583,155.586-155.127   C1489.733,1542.166,1489.712,1541.2,1489.668,1540.226z M744.689,132.141c68.746,0,126.941,46.126,145.617,109.126H598.998   C617.684,178.268,675.908,132.141,744.689,132.141z M1334.147,1566.268H155.592c-12.811,0-22.917-9.645-23.43-22.062   l50.674-1145.048c0.043-0.971,0.064-2.111,0.064-3.084c0-12.695,10.283-22.806,23.412-22.806H460v241.459   c0,36.49,29.51,66.07,66,66.07s66-29.58,66-66.07V373.268h304v241.459c0,36.49,29.51,66.07,66,66.07s66-29.58,66-66.07V373.268   h255.343c13.153,0,23.457,10.095,23.457,22.79c0,0.974,0.021,2.023,0.064,2.998l50.706,1145.117   C1357.057,1556.586,1346.953,1566.268,1334.147,1566.268z"></path>
+                                </g>
+                                <g id="Layer_1"></g>
+                            </svg>
+                        </a>
+                        <span class="header_shopping-count">(4)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="headerBottomContainer" class="header__bottom-box-container fullSizeContainer">
+            <nav class="header_nav-category centerContainer">
+                <ul class="header_category-list">
+                    <li class="header_list-item">
+                        <a href="#" class="header_item-link">MAN</a>
+                        <div class="header_dropdown-container">
+                            <ul class="header_dropdown-menu">
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">КУРТКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item  header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">ШТАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">РЕГЛАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">АКСЕСУАРЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header_list-item">
+                        <a href="#" class="header_item-link">WOMAN</a>
+                        <div class="header_dropdown-container">
+                            <ul class="header_dropdown-menu">
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">КУРТКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item  header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">ШТАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">РЕГЛАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">АКСЕСУАРЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header_list-item">
+                        <a href="#" class="header_item-link">KIDS</a>
+                        <div class="header_dropdown-container">
+                            <ul class="header_dropdown-menu">
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">КУРТКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item  header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">ШТАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">РЕГЛАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">АКСЕСУАРЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header_list-item">
+                        <a href="#" class="header_item-link">TOP GUN</a>
+                        <div class="header_dropdown-container">
+                            <ul class="header_dropdown-menu">
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">КУРТКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item  header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">ШТАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">РЕГЛАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">АКСЕСУАРЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header_list-item">
+                        <a href="#" class="header_item-link">AIRBOSS</a>
+                        <div class="header_dropdown-container">
+                            <ul class="header_dropdown-menu">
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">КУРТКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item  header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">ШТАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">РЕГЛАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">АКСЕСУАРЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header_list-item">
+                        <a href="#" class="header_item-link">BOEING</a>
+                        <div class="header_dropdown-container">
+                            <ul class="header_dropdown-menu">
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">КУРТКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item  header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">ШТАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">РЕГЛАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">АКСЕСУАРЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header_list-item">
+                        <a href="#" class="header_item-link">ALPHA INDUSTRIES</a>
+                        <div class="header_dropdown-container">
+                            <ul class="header_dropdown-menu">
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">КУРТКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item  header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">ШТАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">РЕГЛАНЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-item-last">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item header_dropdown-main">
+                                    <a href="#" class="header_item-link">АКСЕСУАРЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КАТАЛОГ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">НОВИНКИ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">МОИ ЗАКАЗЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ОПЛАТА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">ДОСТАВКА</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">КОНТАКТЫ</a>
+                                </li>
+                                <li class="header_dropdown-item">
+                                    <a href="#" class="header_item-link">БЛОГ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="header_info-list">
+                    <li class="header_list-item">
+                        <a href="#" class="header_item-link">Оплата</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a href="#" class="header_item-link">Доставка</a>
+                    </li>
+                    <li class="header_list-item">
+                        <a href="#" class="header_item-link">Контакты</a>
+                    </li>
+                    <li class="header_list-item">
+                        <button id="buttonLangMobile" class="header_list-button">Ru</button>
+                        <ul id="dropdownLangMobile" class="header_lang-list">
+                            <li class="header_list-item">
+                                <a href="#" class="header_item-link">Ua</a>
+                            </li>
+                            <li class="header_list-item">
+                                <a href="#" class="header_item-link">En</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header_list-item">
+                        <button id="buttonCityMobile" class="header_list-button">Киев</button>
+                        <ul id="dropdownCityMobile" class="header_lang-list">
+                            <li class="header_list-item">
+                                <a href="#" class="header_item-link">Львов</a>
+                            </li>
+                            <li class="header_list-item">
+                                <a href="#" class="header_item-link">Луцк</a>
+                            </li>
+                            <li class="header_list-item">
+                                <a href="#" class="header_item-link">Днепр</a>
+                            </li>
+                            <li class="header_list-item">
+                                <a href="#" class="header_item-link">Винница</a>
+                            </li>
+                            <li class="header_list-item">
+                                <a href="#" class="header_item-link">Одесса</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="gender-banner">
+            <div class="gender-banner__box-container fullSizeContainer">
+                <div class="gender-banner__box-content centerContainer">
+                    <div class="gender-banner_left">
+                        <div class="gender-banner_left_image-container gender-banner_image-container">
+                            <img class="gender-banner_left-image" src="content/image/men_jackets.webp" title="Мужская курточка" alt="Мужская курточка"></img>
+                        </div>
+                        <div class="gender-banner_male-info">
+                            <p class="gender-banner_info">ТАКИМ ОБРАЗОМ ДАЛЬНЕЙШЕЕ РАЗВИТИЕ РАЗЛИЧНЫХ ФОРМ</p>
+                            <h3 class="gender-banner_title">ТАКИМ ОБРАЗОМ</h3>
+                            <a href="#" class="gender-banner_male-button gender-banner_button">МУЖЧИНАМ</a>
+                        </div>
+                    </div>
+                    <img class="gender-banner_center-brand" src="content/image/alpha_industries.webp" title="Alpha Industries" alt="Alpha Industries"></img>
+                    <div class="gender-banner_right">
+                        <div class="gender-banner_female-info">
+                            <p class="gender-banner_info">ТАКИМ ОБРАЗОМ ДАЛЬНЕЙШЕЕ РАЗВИТИЕ РАЗЛИЧНЫХ ФОРМ</p>
+                            <h3 class="gender-banner_title">РАЗВИТИЕ</h3>
+                            <a href="#" class="gender-banner_female-button gender-banner_button">ЖЕНЩИНАМ</a>
+                        </div>
+                        <div class="gender-banner_right_image-container gender-banner_image-container">
+                            <img class="gender-banner_right-image" src="content/image/women_jackets.webp" title="Женская курточка" alt="Женская курточка"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gender-banner_info-discount centerContainer">
+                <p class="gender-banner_discount-text">Up to 50% off selected and identified items valid from 25/09/2019 to 20/10/2019. <a href="#" class="gender-banner_discount-link">See more.</a></p>
+            </div>
+        </div>
+        <div class="catalog-banner__box-container fullSizeContainer">
+            <div class="catalog-banner__box-content centerContainer">
+                <div class="catalog-banner_left catalog-banner_info-container">
+                    <img class="catalog-banner_image" src="content/image/alpha_industries_1.jpg" alt="Catalog">
+                    <div class="catalog-banner-content">
+                        <p class="catalog-banner_info">ТАКИМ ОБРАЗОМ ДАЛЬНЕЙШЕЕ РАЗВИТИЕ РАЗЛИЧНЫХ ФОРМ</p>
+                        <h4 class="catalog-banner_title">ТАКИМ ОБРАЗОМ</h4>
+                        <a class="catalog-banner_button" href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                    </div>
+                </div>
+                <div class="catalog-banner_right catalog-banner_info-container">
+                    <img class="catalog-banner_image" src="content/image/alpha_industries_2.jpg" alt="Catalog">
+                    <div class="catalog-banner-content">
+                        <p class="catalog-banner_info">РАЗНООБРАЗНЫЙ И БОГАТЫЙ ОПЫТ РЕАЛИЗАЦИЯ НАМЕЧЕННЫХ</p>
+                        <h4 class="catalog-banner_title">РАЗВИТИЕ</h4>
+                        <a class="catalog-banner_button" href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product__box-container fullSizeContainer">
+            <div class="product__box-content centerContainer">
+                <ul class="product_list">
+                    <li class="product_list-item">
+                        <div class="product_list-item_content">
+                            <div class="product_image-container">
+                                <a class="product_image_link" href="#">
+                                    <img class="product_image" src="content/image/jacketaltitudeparka.jpg" alt="Jacket">
+                                    <button class="product_preview-button">Быстрый просмотр</button>
+                                    <span class="product_item-new">NEW</span>
+                                </a>
+                            </div>
+                            <div class="product_info-container">
+                                <a class="product_info-title" href="#">Куртка Altitude Parka</a>
+                                <div class="product_favorite-container">
+                                    <span class="product_info-price">$8.99</span>
+                                    <button class="product_favorite-button">
+                                        <svg class="product__favorite-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="-40 0 592 512" style="enable-background:new -40 0 592 512;" xml:space="preserve" width="100%">
+                                            <path d="M378.667,21.333c-56.792,0-103.698,52.75-122.667,77.646    c-18.969-24.896-65.875-77.646-122.667-77.646C59.813,21.333,0,88.927,0,172c0,45.323,17.99,87.563,49.479,116.469    c0.458,0.792,1.021,1.521,1.677,2.177l197.313,196.906c2.083,2.073,4.802,3.115,7.531,3.115s5.458-1.042,7.542-3.125    L467.417,283.74l2.104-2.042c1.667-1.573,3.313-3.167,5.156-5.208c0.771-0.76,1.406-1.615,1.896-2.542    C499.438,245.948,512,209.833,512,172C512,88.927,452.188,21.333,378.667,21.333z" class="active-path" fill="rgba(0,0,0,0)" stroke="black" stroke-width="40"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product_color-container">
+                                <div class="product_color product_color-black"></div>
+                                <div class="product_color product_color-gray"></div>
+                                <div class="product_color product_color-red"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="product_more-link">ЕЩЁ</a>
+            </div>
+        </div>
+        <div class="news_box-container fullSizeContainer">
+            <div class="news_box-content centerContainer">
+                <h2 class="news_title">Наши новости</h2>
+                <ul class="news_list">
+                    <li class="news_list-item">
+                        <div class="news_item">
+                            <div class="news_item-header">
+                                <div class="news_header-left">
+                                    <img src="content/image/george_lukas.jpg" class="news_header-image" alt="Джордж Лукас" title="Джордж Лукас">
+                                    <div class="news_header-publish">
+                                        <span class="news_header-author">George Lukas</span>
+                                        <time class="news_header-date">24 июня 2019</time>
+                                    </div>
+                                </div>
+                                <div class="news_header-right">
+                                    <span class="news_header-response">2 response</span>
+                                    <svg class="news_header-response-svg" enable-background="new 0 0 70 70" fill="#fefa07" version="1.1" viewBox="35 40 70 70" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Livello_42">
+                                            <polygon points="41.161,0 41.161,140.779 41.369,140.779 70.865,113.964 100.363,140.779 100.571,140.779 100.571,0  "></polygon>
+                                        </g>
+                                        <g id="Livello_1_1_"></g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="news_item-content">
+                                <img src="content/image/sunglasses_top_gun.jpg" class="news_content-image" alt="Очки TOP GUN" title="Очки TOP GUN">
+                                <h4 class="news_content-title">Легенда солнцезащитных очков TOP GUN</h4>
+                                <p class="news_content-info">Очки от бренда Top Gun - это отличная альтернатива для повседневного использования. Они оснащены поляризованными линзами и высококачественной оправой из металла, а все разработки проходили с </br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero numquam porro, earum odit sit, tempora, accusantium maxime amet minima sapiente eligendi dolores est pariatur. Aperiam optio ducimus ut fugiat dolore.</p>
+                                <span class="news_content-more">УЗНАТЬ БОЛЬШЕ</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="news_list-item">
+                        <div class="news_item">
+                            <div class="news_item-header">
+                                <div class="news_header-left">
+                                    <img src="content/image/george_lukas.jpg" class="news_header-image" alt="Джордж Лукас" title="Джордж Лукас">
+                                    <div class="news_header-publish">
+                                        <span class="news_header-author">George Lukas</span>
+                                        <time class="news_header-date">24 июня 2019</time>
+                                    </div>
+                                </div>
+                                <div class="news_header-right">
+                                    <span class="news_header-response">2 response</span>
+                                    <svg class="news_header-response-svg" enable-background="new 0 0 70 70" fill="#fefa07" version="1.1" viewBox="35 40 70 70" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Livello_42">
+                                            <polygon points="41.161,0 41.161,140.779 41.369,140.779 70.865,113.964 100.363,140.779 100.571,140.779 100.571,0  "></polygon>
+                                        </g>
+                                        <g id="Livello_1_1_"></g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="news_item-content">
+                                <img src="content/image/sunglasses_top_gun.jpg" class="news_content-image" alt="Очки TOP GUN" title="Очки TOP GUN">
+                                <h4 class="news_content-title">Легенда солнцезащитных очков TOP GUN</h4>
+                                <p class="news_content-info">Очки от бренда Top Gun - это отличная альтернатива для повседневного использования. Они оснащены поляризованными линзами и высококачественной оправой из металла, а все разработки проходили с </br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero numquam porro, earum odit sit, tempora, accusantium maxime amet minima sapiente eligendi dolores est pariatur. Aperiam optio ducimus ut fugiat dolore.</p>
+                                <span class="news_content-more">УЗНАТЬ БОЛЬШЕ</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="news_list-item">
+                        <div class="news_item">
+                            <div class="news_item-header">
+                                <div class="news_header-left">
+                                    <img src="content/image/george_lukas.jpg" class="news_header-image" alt="Джордж Лукас" title="Джордж Лукас">
+                                    <div class="news_header-publish">
+                                        <span class="news_header-author">George Lukas</span>
+                                        <time class="news_header-date">24 июня 2019</time>
+                                    </div>
+                                </div>
+                                <div class="news_header-right">
+                                    <span class="news_header-response">2 response</span>
+                                    <svg class="news_header-response-svg" enable-background="new 0 0 70 70" fill="#fefa07" version="1.1" viewBox="35 40 70 70" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <g id="Livello_42">
+                                            <polygon points="41.161,0 41.161,140.779 41.369,140.779 70.865,113.964 100.363,140.779 100.571,140.779 100.571,0  "></polygon>
+                                        </g>
+                                        <g id="Livello_1_1_"></g>
+                                    </svg>
+                                </div>
+                            </div>
+                            <a href="#" class="news_item-content">
+                                <img src="content/image/sunglasses_top_gun.jpg" class="news_content-image" alt="Очки TOP GUN" title="Очки TOP GUN">
+                                <h4 class="news_content-title">Легенда солнцезащитных очков TOP GUN</h4>
+                                <p class="news_content-info">Очки от бренда Top Gun - это отличная альтернатива для повседневного использования. Они оснащены поляризованными линзами и высококачественной оправой из металла, а все разработки проходили с </br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero numquam porro, earum odit sit, tempora, accusantium maxime amet minima sapiente eligendi dolores est pariatur. Aperiam optio ducimus ut fugiat dolore.</p>
+                                <span class="news_content-more">УЗНАТЬ БОЛЬШЕ</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="subscribe_box-container fullSizeContainer">
+            <div class="subscribe_box-content centerContainer">
+                <p class="subscribe_info">Подпишись и получи 10% скидки</p>
+                <form action="#" method="post" class="subscribe_form">
+                    <input class="subscribe_form-input" type="text" placeholder="Введите ваш e-mail">
+                    <button class="subscribe_form-button" type="button">ПОДПИСАТЬСЯ</button>
+                </form>
+            </div>
+        </div>
+        <div class="brand_box-container fullSizeContainer">
+            <div class="brand_box-content centerContainer">
+                <img class="brand_image-container" src="content/image/brands.jpg" alt="Brand" title="Brand">
+                <div class="brand_info-container">
+                    <p class="brand_title">БРЕНДЫ</br>ПРОВЕРЕННЫЕ</br>ВРЕМЕНЕМ</p>
+                    <a href="#" class="brand_link">ПЕРЕЙТИ В КАТАЛОГ</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo_container fullSizeContainer">
+            <div class="footer__logo_content centerContainer">
+                <a href="#" class="footer_logo-link">
+                    <h1 class="footer_logo-title">PARKAS</h1>
+                </a>
+            </div>
+        </div>
+        <div class="footer__nav-container fullSizeContainer">
+            <div class="footer__nav-content centerContainer">
+                <ul class="footer_nav-list">
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">ИНФОРМАЦИЯ</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">ОПЛАТА</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">ДОСТАВКА</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">КОНТАКТЫ</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">БЛОГ</a>
+                    </li>
+                </ul>
+                <ul class="footer_nav-list">
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">МАГАЗИН</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">КАТОЛОГ</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="" class="footer_item_link">НОВИНКИ</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">МОИ ЗАКАЗЫ</a>
+                    </li>
+                </ul>
+                <ul class="footer_nav-list">
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">БРЕНДЫ</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">ALPHA INDUSTRIES</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">TOP GUN</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">AIRBOSS</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="#" class="footer_item_link">BOEING</a>
+                    </li>
+                </ul>
+                <div class="footer_subscribe">
+                    <h4 class="footer_subscribe-title">ПОДПИСКА</h4>
+                    <p class="footer_subscribe-info">Do you want to receive special offers? Sign up and get 10% off</p>
+                    <form action="#" method="post" class="footer_subscribe-form">
+                        <input type="text" class="footer_form-input" placeholder="Ввeдите ваш e-mail">
+                        <button type="button" class="footer_form-button">
+                            <svg class="footer_button-svg" data-name="Layer 21" height="24" id="Layer_21" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <polygon points="3 12 8.61 14.992 17 8 9 17.455 9 21 12.164 16.887 18 20 21 3 3 12"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom-container fullSizeContainer">
+            <div class="footer__bottom-content centerContainer">
+                <span class="footer_bottom-copyright">&#169;2019 eska8. All rights reserved</span>
+                <div class="footer_botoom-social">
+                    <a href="#" class="footer_social-facebook footer_social-link">
+                        <svg class="footer_facebook-svg footer_social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve" fill="white">
+                            <g id="XMLID_834_">
+                                <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+                                    c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+                                    V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+                                    C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+                                    c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer_social-instagram footer_social-link">
+                        <svg class="footer_instagram-svg footer_social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" fill="white">
+                            <g id="XMLID_504_">
+                                <path id="XMLID_505_" d="M38.52,0.012h222.978C282.682,0.012,300,17.336,300,38.52v222.978c0,21.178-17.318,38.49-38.502,38.49
+                                    H38.52c-21.184,0-38.52-17.313-38.52-38.49V38.52C0,17.336,17.336,0.012,38.52,0.012z M218.546,33.329
+                                    c-7.438,0-13.505,6.091-13.505,13.525v32.314c0,7.437,6.067,13.514,13.505,13.514h33.903c7.426,0,13.506-6.077,13.506-13.514
+                                    V46.854c0-7.434-6.08-13.525-13.506-13.525H218.546z M266.084,126.868h-26.396c2.503,8.175,3.86,16.796,3.86,25.759
+                                    c0,49.882-41.766,90.34-93.266,90.34c-51.487,0-93.254-40.458-93.254-90.34c0-8.963,1.37-17.584,3.861-25.759H33.35v126.732
+                                    c0,6.563,5.359,11.902,11.916,11.902h208.907c6.563,0,11.911-5.339,11.911-11.902V126.868z M150.283,90.978
+                                    c-33.26,0-60.24,26.128-60.24,58.388c0,32.227,26.98,58.375,60.24,58.375c33.278,0,60.259-26.148,60.259-58.375
+                                    C210.542,117.105,183.561,90.978,150.283,90.978z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer_social-youtube footer_social-link">
+                        <svg class="footer_youtube-svg footer_social-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 310 310" style="enable-background:new 0 0 310 310;" xml:space="preserve" fill="white">
+                            <g id="XMLID_822_">
+                                <path id="XMLID_823_" d="M297.917,64.645c-11.19-13.302-31.85-18.728-71.306-18.728H83.386c-40.359,0-61.369,5.776-72.517,19.938
+                                    C0,79.663,0,100.008,0,128.166v53.669c0,54.551,12.896,82.248,83.386,82.248h143.226c34.216,0,53.176-4.788,65.442-16.527
+                                    C304.633,235.518,310,215.863,310,181.835v-53.669C310,98.471,309.159,78.006,297.917,64.645z M199.021,162.41l-65.038,33.991
+                                    c-1.454,0.76-3.044,1.137-4.632,1.137c-1.798,0-3.592-0.484-5.181-1.446c-2.992-1.813-4.819-5.056-4.819-8.554v-67.764
+                                    c0-3.492,1.822-6.732,4.808-8.546c2.987-1.814,6.702-1.938,9.801-0.328l65.038,33.772c3.309,1.718,5.387,5.134,5.392,8.861
+                                    C204.394,157.263,202.325,160.684,199.021,162.41z">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer_bottom-contacts">
+                    <svg class="footer_contacts-svg" fill="white" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M415.9,335.5c-14.6-15-56.1-43.1-83.3-43.1c-6.3,0-11.8,1.4-16.3,4.3c-13.3,8.5-23.9,15.1-29,15.1c-2.8,0-5.8-2.5-12.4-8.2  l-1.1-1c-18.3-15.9-22.2-20-29.3-27.4l-1.8-1.9c-1.3-1.3-2.4-2.5-3.5-3.6c-6.2-6.4-10.7-11-26.6-29l-0.7-0.8  c-7.6-8.6-12.6-14.2-12.9-18.3c-0.3-4,3.2-10.5,12.1-22.6c10.8-14.6,11.2-32.6,1.3-53.5c-7.9-16.5-20.8-32.3-32.2-46.2l-1-1.2  c-9.8-12-21.2-18-33.9-18c-14.1,0-25.8,7.6-32,11.6c-0.5,0.3-1,0.7-1.5,1c-13.9,8.8-24,20.9-27.8,33.2c-5.7,18.5-9.5,42.5,17.8,92.4  c23.6,43.2,45,72.2,79,107.1c32,32.8,46.2,43.4,78,66.4c35.4,25.6,69.4,40.3,93.2,40.3c22.1,0,39.5,0,64.3-29.9  C442.3,370.8,431.5,351.6,415.9,335.5z"></path>
+                    </svg>
+                    <a href="tel:0800211611" class="footer_contacts_number">0 (800) 211-611</a>
+                    <a href="tel:0676533024" class="footer_contacts_number">(067) 653-30-24</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/animationDropdown.js"></script>
+    <script src="scripts/animationHeader.js"></script>
+    <script src="scripts/animationScrollTop.js"></script>
+    <script src="scripts/animationBurger.js"></script>
+</body>
+</html>
